@@ -28,18 +28,7 @@ const filter = function (field, operator, value) {
 
     /* YOUR CODE HERE */
 
-    return items.filter(i => {
-        switch (operator) {
-            case EQUAL:
-                return i[field] === value
-            case CONTAINS:
-                return i[field].search(value) === -1 ? false : true
-            case GREATER_THAN:
-                return i[field] > value
-            case LESS_THAN:
-                return i[field] < value
-        }
-    })
+
 
 
 }
